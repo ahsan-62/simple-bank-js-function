@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Interactive Bank with JS FUNCTION</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="mt-8 text-3xl text-center text">
+        Simple Interactive
+        <span class="font-bold text-red-500">Bank</span>
+      </h1>
+    </header>
+
+    <main>
+      <section class="grid w-3/4 grid-cols-3 gap-4 mx-auto mt-12">
+        <div class="p-8 bg-red-300 rounded">
+          <h3>Deposit</h3>
+          <p>$<span id="deposit-total">00</span></p>
+        </div>
+        <div class="p-8 bg-green-300 rounded">
+          <h3>Withdraw</h3>
+          <p>$<span id="withdraw-total">00</span></p>
+        </div>
+        <div class="p-8 bg-yellow-300 rounded">
+          <h3>Balance</h3>
+          <p>$<span id="balance-total">1200</span></p>
+        </div>
+      </section>
+
+      <section class="grid w-3/4 grid-cols-2 gap-4 mx-auto mt-12">
+        <div class="p-8 bg-blue-300 rounded">
+          <h3>Deposit Amount</h3>
+          <div>
+            <input
+              id="deposit-input"
+              class="block w-3/4 px-2 mb-4 border border-gray-400 rounded"
+              type="text"
+              placeholder="amount you want to deposit"
+            />
+            <button
+              id="deposit-btn"
+              class="px-4 py-2 font-bold bg-yellow-300 rounded"
+              type="submit"
+            >
+              Deposit
+            </button>
+          </div>
+        </div>
+        <div class="p-8 bg-blue-300 rounded">
+          <h3>withdraw Amount</h3>
+          <div>
+            <input
+              id="withdraw-input"
+              class="block w-3/4 px-2 mb-4 border border-gray-400 rounded"
+              type="text"
+              placeholder="amount you want to withdraw"
+            />
+            <button
+              id="withdraw-btn"
+              class="px-4 py-2 font-bold rounded bg-cyan-300"
+              type="submit"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script/script.js"></script>
+    <script src="script/withdraw.js"></script>
+  </body>
+</html>
